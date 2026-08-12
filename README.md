@@ -197,28 +197,6 @@ I'm interested in understanding how neural networks behave under adversarial con
 
 ---
 
-# 📈 GitHub Activity
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=dileepkumar2626&show_icons=true&hide_border=true&rank_icon=github" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=dileepkumar2626&hide_border=true" />
-
-</div>
-
----
-
-# 🐍 Contribution Activity
-
-<div align="center">
-
-![Snake animation](https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg)
-
-</div>
-
----
-
 # 🎯 Currently Learning
 
 ```text
