@@ -53,6 +53,7 @@ Currently exploring **AI, Computer Vision, Reinforcement Learning, and Machine L
 
 </td>
 <td valign="top">
+</table>
 
 ---
 
