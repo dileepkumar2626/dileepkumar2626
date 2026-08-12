@@ -54,19 +54,6 @@ Currently exploring **AI, Computer Vision, Reinforcement Learning, and Machine L
 </td>
 <td valign="top">
 
-### 🔬 Research Interests
-
-* Adversarial Robustness
-* AI Security
-* Gradient-Based Attacks
-* Computer Vision
-* Neural Network Robustness
-* Deep Learning
-
-</td>
-</tr>
-</table>
-
 ---
 
 # 🚀 Featured Projects
