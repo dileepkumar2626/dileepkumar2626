@@ -136,18 +136,6 @@ Currently exploring **AI, Computer Vision, Reinforcement Learning, and Machine L
 
 ---
 
-# 🔬 Current Research
-
-### Evaluating the Robustness of Convolutional Neural Networks Against Inference-Time Gradient-Based Adversarial Attacks
-
-I'm interested in understanding how neural networks behave under adversarial conditions and how their robustness can be improved.
-
-**Focus**
-
-`CNNs` → `FGSM` → `PGD` → `Robustness Evaluation` → `Defense Mechanisms`
-
----
-
 # 🛠️ Tech Stack
 
 ### Languages
