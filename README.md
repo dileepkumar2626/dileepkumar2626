@@ -25,45 +25,19 @@
 
 ## 🧑‍💻 About Me
 
-<table>
-<tr>
-<td width="55%" valign="top">
+I like taking a model **all the way** from raw data to something people can use: cleaning the data, training the model, putting it behind an API, building the interface, and shipping it with Docker. Lately I've been building **LLM agents**, and I care about *measuring* them, not just demoing them.
 
-I like taking a model **all the way** from raw data to something people can use: cleaning the data, training the model, putting it behind an API, building the interface, and shipping it with Docker.
+<p align="center">
+  <img src="https://img.shields.io/badge/AI%20Agents%20Intern-AgenticX%20AI%20Labs-4b2c8a?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CGPA-4.0%20%2F%205.0-70a5fd?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Certifications-21-76B900?style=for-the-badge"/>
+</p>
 
-Lately I've been building **LLM agents**, and I care about *measuring* them, not just demoing them.
-
-- 🤖 **AI Agents & Automation Intern** @ AgenticX AI Labs
-- 📄 Re-implemented **CycleGAN** & **AdaIN** from the papers
-- 🌐 Shipped a **live** style-transfer app with 65 styles
-- 📊 **93.6% recall** on churn across 36,000+ customers
-- 🏅 **21 certifications** incl. 9 from NVIDIA DLI
-
-</td>
-<td width="45%" valign="top">
-
-```python
-class DileepKumar:
-    role     = "AI / ML Engineer"
-    based_in = "Budapest, Hungary"
-    studying = "BSc CS @ Univ. of Debrecen"
-    gpa      = "4.0 / 5.0"
-
-    focus = [
-        "LLM agents & evaluation",
-        "Generative models",
-        "Computer vision",
-        "Reinforcement learning",
-    ]
-
-    def motto(self):
-        return "If you can't measure it, " \
-               "you can't ship it."
-```
-
-</td>
-</tr>
-</table>
+- 🤖 Built a **research agent**, a **RAG** service with page-level citations, and an **MCP server**, each with its own evaluation suite
+- 📄 Re-implemented **CycleGAN** and **AdaIN** from the original papers in PyTorch
+- 🌐 Shipped a **live** style-transfer app with 65 preset styles
+- 📊 Reached **93.6% recall** on churn prediction across 36,000+ customers
+- 🔭 Focus areas: **LLM agents & evaluation · generative models · computer vision · reinforcement learning**
 
 <!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:4b2c8a,100:70a5fd&height=3&section=header" width="100%"/>
@@ -330,9 +304,6 @@ A real-time, two-player co-op escape-room game in the browser. I built the Wi-Fi
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=dileepkumar2626&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
-</p>
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=dileepkumar2626&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph"/>
 </p>
 
 <!-- ═══════════════════════════════ EDUCATION + OPEN TO ═══════════════════════════════ -->
