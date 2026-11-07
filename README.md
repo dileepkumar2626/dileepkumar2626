@@ -1,14 +1,15 @@
 <h1 align="center">Hi, I'm Dileep Kumar 👋</h1>
 
-<h3 align="center">AI / ML Engineer · Deep Learning · Generative AI · Computer Vision</h3>
+<h3 align="center">AI / ML Engineer · LLM Agents · Generative AI · Computer Vision</h3>
 
 <p align="center">
-  CS student at the University of Debrecen · Based in Budapest, Hungary 🇭🇺
+  CS student at the University of Debrecen (Faculty of Informatics) · Based in Budapest, Hungary 🇭🇺
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/dileep-kumarbh/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:dileepkumarbh5175@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://adain-neural-style-transfer-nc755sseypejksgcwxs7ec.streamlit.app/"><img src="https://img.shields.io/badge/Live%20Demo-StyleForge%20AI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="StyleForge AI live demo"></a>
 </p>
 
 ---
@@ -16,13 +17,53 @@
 ## 👨‍💻 About Me
 
 I like taking a model all the way from raw data to something people can use: cleaning the data, training the model,
-putting it behind an API, building the interface, and packaging it with Docker.
+putting it behind an API, building the interface, and packaging it with Docker. Lately I've been building **LLM agents**,
+and I care about measuring them, not just demoing them.
 
+- 🤖 **AI Agents & Automation Intern at AgenticX AI Labs**: built a tool-using research agent, a RAG question-answering service with page-level citations, and an MCP server, each with its own evaluation suite
 - 🖌️ Built **StyleForge AI**, an AdaIN neural style transfer app with a [live demo](https://adain-neural-style-transfer-nc755sseypejksgcwxs7ec.streamlit.app/), 65 preset styles and face preservation
 - 🎨 Built a **CycleGAN from scratch in PyTorch** and turned it into a full-stack face-to-anime app
 - 📊 Reached **93.6% recall** predicting customer churn on **36,000+ records**
 - 🎮 Trained a **Deep Q-Network** agent to play Flappy Bird from reward signals alone
-- 👥 Built a modular **unsupervised segmentation pipeline** with PCA, K-Means and DBSCAN
+- 🏅 **9 NVIDIA Deep Learning Institute certificates**, plus NVIDIA, Microsoft, IBM, Cisco and Certiport certifications
+
+---
+
+## 💼 Experience
+
+### 🤖 AI Agents & Automation Intern · AgenticX AI Labs (virtual) · Oct – Nov 2026
+A 4-week remote programme with three projects, each reviewed independently against published criteria.
+
+#### 🔎 [Tool-Using Research Agent](https://github.com/dileepkumar2626/project2)
+> Searches the web, reads pages, and writes a cited summary, and stops when it has enough.
+
+- A **decide → act → observe** loop on Claude tool use with `search` (DuckDuckGo), `fetch` (httpx + trafilatura) and an explicit `finish` tool
+- **Cost control outside the model**: a hard iteration cap and a total token budget per run
+- A **scratchpad** keeps context small: pages are truncated, and short summaries of findings are fed back every turn
+- Failed fetches come back as **observations, not exceptions**, so the agent adapts. Repeated queries and URLs are blocked, and every tool call is validated
+- A **10-question benchmark** tracks completion, sources cited, expected domains, iterations and tokens
+
+`Python` `Claude API` `Tool Use` `httpx` `trafilatura`
+
+#### 📄 [PDF Question-Answering Agent (RAG)](https://github.com/dileepkumar2626/project1)
+> Ask questions about a folder of PDFs and get answers with the page they came from.
+
+- **Structure-aware chunking**: chunks keep their page number and section heading, and the title and heading are prepended before embedding
+- **Sentence Transformers** embeddings in **ChromaDB**, with Claude generating answers and **page-level citations**
+- **FastAPI** endpoints to ingest a folder, upload a file, ask, and list or delete documents, plus a health check
+- **Hash-based caching** skips unchanged files, and scanned PDFs are detected rather than answered from empty context
+- A **20-question evaluation** scores **retrieval** and **generation** separately, so you know which stage to fix
+
+`Python` `RAG` `ChromaDB` `Sentence Transformers` `FastAPI` `Claude API`
+
+#### 🔌 [MCP Documentation Server](https://github.com/dileepkumar2626/project3)
+> Lets any MCP client (Claude Desktop, Claude Code…) answer questions about a docs folder.
+
+- A read-only **Model Context Protocol** server over stdio with three narrow tools: `search_docs`, `read_doc`, `list_sections`
+- A custom **keyword search engine**: TF-IDF with length normalisation, an IDF threshold, stop words, word-form and British/American spelling expansion, and a phrase-match bonus
+- A **15-question eval suite**, used to iterate on tool descriptions
+
+`Python` `MCP` `TF-IDF` `Claude Desktop` `Claude Code`
 
 ---
 
@@ -93,11 +134,31 @@ putting it behind an API, building the interface, and packaging it with Docker.
 
 ---
 
+### 🕹️ [Time Loop Escape](https://github.com/nd2003/sdm2026-1) · Team Hackathon · Frontend
+> A real-time, two-player co-op escape-room game in the browser, built by a student team.
+
+- Frontend team member on a multi-team hackathon platform (**Vite + TypeScript** frontends, **Colyseus** multiplayer server on Node.js, hosted on Railway)
+- Implemented local-network address detection for the room invite link, so two devices on the same Wi-Fi can join one game, with unit tests
+- Merged team pull requests and kept the team branch in sync with `main` through a CI-gated branch workflow
+
+`TypeScript` `Vite` `Colyseus` `Node.js` `Git`
+
+---
+
 ## 🛠️ Tech Stack
 
 **Languages**<br>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+
+**LLMs & AI Agents**<br>
+![Claude API](https://img.shields.io/badge/Claude%20API-191919?style=for-the-badge&logo=anthropic&logoColor=white)
+![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-000000?style=for-the-badge)
+![RAG](https://img.shields.io/badge/RAG-4B32C3?style=for-the-badge)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge)
+![Sentence Transformers](https://img.shields.io/badge/Sentence%20Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
 **Deep Learning, Generative AI & Computer Vision**<br>
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -126,26 +187,36 @@ putting it behind an API, building the interface, and packaging it with Docker.
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
 ## 🏅 Certifications
 
-- **NVIDIA:** Generative AI with Diffusion Models · Building AI Agents with Multimodal Models · AI for Anomaly Detection · AI for Predictive Maintenance
-- **IBM:** Generative AI Fundamentals
-- **Microsoft:** Security, Compliance, and Identity Fundamentals (SC-900)
-- **Certiport:** Software Development · JavaScript · HTML & CSS
+- **NVIDIA Deep Learning Institute (9):** Fundamentals of Deep Learning · Generative AI with Diffusion Models · Building AI Agents with Multimodal Models · Building LLM Applications With Prompt Engineering · Computer Vision for Industrial Inspection · NVIDIA Isaac for Accelerated Robotics · Fundamentals of Accelerated Data Science · AI for Anomaly Detection · AI for Predictive Maintenance
+- **NVIDIA (Coursera):** AI Infrastructure and Operations Fundamentals · The Fundamentals of RDMA Programming · Introduction to Networking
+- **Microsoft:** Azure Data Fundamentals (DP-900) · Security, Compliance, and Identity Fundamentals (SC-900)
+- **Certiport IT Specialist:** Python · Software Development · JavaScript · HTML & CSS
+- **IBM:** Generative AI Fundamentals Specialization
+- **Cisco:** Linux Essentials · **Cognitive Class:** SQL and Relational Databases 101
+
+---
+
+## 🎓 Education & Activities
+
+- **BSc Computer Science**, University of Debrecen, Faculty of Informatics (2024 – present) · CGPA 4.0/5.0
+- Attended the **4th UD International Scientific Conference** (May 2025)
 
 ---
 
 ## 🎯 Open To
 
-**AI/ML Engineer · Generative AI · Computer Vision · AI Software Engineer** roles: internships, working-student positions and junior roles.
+**AI/ML Engineer · LLM & AI Agents · Generative AI · Computer Vision · MLOps · AI Software Engineer** roles: internships, working-student positions and junior roles, plus **AI research** opportunities.
 
 ---
 
 <p align="center">
-  <b>Data → Model → API → App</b><br>
+  <b>Data → Model → API → App → Agent</b><br>
   📫 Let's connect: <a href="https://www.linkedin.com/in/dileep-kumarbh/">LinkedIn</a> · <a href="mailto:dileepkumarbh5175@gmail.com">Email</a>
 </p>
